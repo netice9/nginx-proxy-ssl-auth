@@ -1,4 +1,11 @@
+mockserver:
+  image: jamesdbloom/mockserver:mockserver-3.10.2
 proxy:
   build: docker
+  links:
+    - mockserver
 test:
   build: test
+  links:
+    - mockserver
+    - proxy

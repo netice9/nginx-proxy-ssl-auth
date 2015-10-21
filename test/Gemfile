@@ -2,3 +2,10 @@
 source "https://rubygems.org"
 
 # gem "rails"
+gem 'mockserver-client'
+gem 'cucumber'
+gem 'httparty'
+gem 'rspec-expectations'
+gem 'pry'
+gem 'pry-byebug'
+
